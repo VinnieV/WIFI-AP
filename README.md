@@ -8,17 +8,13 @@ The packages dnsmasq and hostapd are required to set it up.
 ## Configure hostapd
 Hostapd is the tool that will create an AP via the WIFI dongle.
 1. Copy hostapd.conf file to /etc/hostapd.conf
-
-```sudo cp hostapd.conf /etc/hostapd.conf```
+`sudo cp hostapd.conf /etc/hostapd.conf`
 2. Open up /etc/init.d/hostapd in a text-editor
-
-```sudo vim /etc/init.d/hostapd```
+`sudo vim /etc/init.d/hostapd`
 3. Search for the line:
-
-```DEAMON_CONF=```    
+`DEAMON_CONF=`
 Change it to:
-
-```DEAMON_CONF=/etc/hostapd.conf```
+`DEAMON_CONF=/etc/hostapd.conf`
 
 
 # Usage
